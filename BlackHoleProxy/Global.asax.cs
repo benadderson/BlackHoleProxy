@@ -23,7 +23,7 @@ namespace BlackHoleProxy
 
             routes.MapRoute(
                 "Default", // Route name
-                "{controller}/{action}/{id}", // URL with parameters
+                "{*url}", // URL with parameters
                 new { controller = "Only", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             );
 
